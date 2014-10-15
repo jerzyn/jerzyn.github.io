@@ -1,7 +1,7 @@
 /* Sticky footer styles
 -------------------------------------------------- */
 @import "compass";
-$base-font-size: 16px;
+$base-font-size: 18px;
 $base-line-height: 24px;
 
 @include establish-baseline;
@@ -9,10 +9,40 @@ $base-line-height: 24px;
 html {
   position: relative;
   min-height: 100%;
+  @include adjust-leading-to(3);
 }
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+	background-color: #ddd;
+	@include adjust-font-size-to(18px);
+}
+h1 {
+	@include adjust-font-size-to(40px);
+	@include rhythm(1, 0, 0, .5, 42px);
+}
+h2 {
+	@include adjust-font-size-to(32px);	
+	@include rhythm(1, 0, 0, .5, 32px);
+}
+h3 {
+	@include adjust-font-size-to(26px);	
+	@include rhythm(1, 0, 0, .5, 26px);
+}
+h4 {
+	@include adjust-font-size-to(22px);
+	@include rhythm(1, 0, 0, .5, 22px);
+}
+.container {
+	background-color: #fff;
+	padding:  0 1.5em 1.5em;
+}
+.page-header {
+	overflow: hidden;
+	& h1 {
+		float: left;
+	}
+	& .contact {
+		float: right;
+	}
 }
 .footer {
   position: absolute;
@@ -24,10 +54,14 @@ body {
 }
 
 .section {
-  border-bottom: 1px solid #eee;
+	@include trailing-border(1px, .5);
+  	border-bottom-color: #eee;
+  	border-bottom-style: solid;
+  clear: both;
   & span {
   	float: right;
-  	font-size: 100%;
+  	@include adjust-font-size-to(18px);
+	@include rhythm(1, 0, 0, .5, 18px);
   	font-weight: bold;
   }
 }

@@ -1,10 +1,10 @@
 # Site settings
-title: Andrzej Jarzyna CV
+title: Andrzej Jarzyna
 email: andrew.jarzyna@gmail.com
 description: "CV of Andrzej JArzyna"
 baseurl: ""
-url: "http://andrzejCV.github.io"
-github_username:  jerzyn
+url: "http://jerzyn.github.io"
+github_username: jerzyn
 
 # Build settings
 markdown: kramdown
