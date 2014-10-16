@@ -1,4 +1,3 @@
-var converter = new Showdown.converter();
 var client = contentful.createClient({
   space: 'ug3k80oom457',
   accessToken: '4dd8a222e67ba04e986ec9122b1019169899fb9587af5600c3f848cc67eeb118',
