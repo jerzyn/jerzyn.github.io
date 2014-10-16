@@ -79,17 +79,12 @@ h4 {
   float: right;
 }
 
-/* line 47, ../../_compass/main.scss */
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  background-color: #f5f5f5;
+/* line 48, ../../_compass/main.scss */
+.footers .container p {
+  float: right;
 }
 
-/* line 56, ../../_compass/main.scss */
+/* line 53, ../../_compass/main.scss */
 .section {
   border-bottom-width: 0.05556em;
   border-bottom-style: solid;
@@ -98,7 +93,7 @@ h4 {
   border-bottom-style: solid;
   clear: both;
 }
-/* line 61, ../../_compass/main.scss */
+/* line 58, ../../_compass/main.scss */
 .section span {
   float: right;
   font-size: 1em;
